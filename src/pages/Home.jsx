@@ -13,39 +13,58 @@ export const Home = () => {
   const [selectededCity, setSelectededCity] = useState(null);
   const [selectedPropertyType, setSelectedPropertyType] = useState(null);
 
+  const locationOptions = [
+    "Select an Option",
+    "Toronto, Canada",
+    "California, USA",
+    "Paris, France",
+    "Santorini, Greece",
+  ];
+
+  const priceOptions = [
+    "Select an Option",
+    "10k-20k",
+    "20k-30k",
+    "30k-40k",
+    "40k-50k",
+  ];
+
+  const propertyTypeOptions = ["Select an Option", "Flat", "Bungalow", "Villa"];
+
   const filterHandler = () => {
-    let filteredResult = data;
+    let filteredResult = [];
     if (selectededCity) {
-      filteredResult = filteredResult.filter((data) => data.location.city === selectededCity);
+      filteredResult = data.filter(
+        (data) => data.location.city === selectededCity?.split(", ")[0]
+      );
     }
     if (selectedPrice) {
-      filteredResult = filteredResult.filter(
+      filteredResult = data.filter(
         (data) =>
-          data.price < selectedPrice.split("-")[1] &&
-          data.price > selectedPrice.split("-")[0]
+          data.price <
+            selectedPrice?.replaceAll("k", "").split("-")[1] + "000" &&
+          data.price > selectedPrice?.replaceAll("k", "").split("-")[0] + "000"
       );
     }
     if (selectedPropertyType) {
-      filteredResult = filteredResult.filter(
+      filteredResult = data.filter(
         (data) => data["property-type"] === selectedPropertyType
       );
     }
     if (moveInDate) {
-      filteredResult = filteredResult.filter(
+      filteredResult = data.filter(
         (data) =>
           Object.values(data["move-in-date"]).reverse().join("-") <= moveInDate
       );
     }
     if (search) {
       if (search === "") setSearch("");
-      filteredResult = filteredResult.filter((data) =>
+      filteredResult = data.filter((data) =>
         data.name.toLowerCase().includes(search.toLowerCase())
       );
     }
     setData(filteredResult);
   };
-
-  console.log(moveInDate)
 
   return (
     <div className="md:px-25 md:py-[3rem] lg:px-28 md:py-[3.5rem] px-16 py-[2rem] bg-gray-100 z-0 flex flex-col gap-4">
@@ -71,11 +90,16 @@ export const Home = () => {
         setSelectedPropertyType={setSelectedPropertyType}
         setMoveInDate={setMoveInDate}
         filterHandler={filterHandler}
+        locationOptions={locationOptions}
+        priceOptions={priceOptions}
+        propertyTypeOptions={propertyTypeOptions}
       />
       <section>
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {data.length < 1 ? (
-            <h1 className="text-2xl text-center pt-5 text-red-500">No filteredResults. Try changing filters</h1>
+            <h1 className="text-2xl text-center pt-5 text-red-500">
+              No filtered results. Try changing filters
+            </h1>
           ) : (
             data.map((house) => <Card house={house} key={house.id} />)
           )}

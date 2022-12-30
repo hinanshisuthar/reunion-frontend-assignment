@@ -27,8 +27,8 @@
             "name":"Beverly Springfield",
             "location":{
                 "address":"Gola Road",
-                "state":"California",
-                "city":"USA"
+                "state":"USA",
+                "city":"California"
             },
             "price":"20000",
             "image":"https://ap.rdcpix.com/da5f33259897350f0a7f7c18a4c44ea2l-m1953170496s-w1024_h768.jpg",
@@ -72,8 +72,8 @@
             "name":"Houseonus",
             "location":{
                 "address":"Gola Road",
-                "state":"California",
-                "city":"USA"
+                "state":"USA",
+                "city":"California"
             },
             "price":"15000",
             "image":"https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
@@ -120,9 +120,9 @@
                 "state":"Ontario",
                 "city":"Toronto"
             },
-            "price":"34000",
+            "price":"49000",
             "image":"https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-            "property-type":"Banglow",
+            "property-type":"Bangalow",
             "move-in-date":{
                 "year":2022,
                 "month":11    
@@ -210,7 +210,7 @@
             },
             "price":"40000",
             "image":"https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGhvbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-            "property-type":"Banglow",
+            "property-type":"Bangalow",
             "move-in-date":{
                 "year":2023,
                 "month":3
@@ -249,8 +249,8 @@
             "name":"Stillness",
             "location":{
                 "address":"1st Lane, Belly Road",
-                "state":"California",
-                "city":"USA"
+                "state":"USA",
+                "city":"California"
             },
             "price":"25000",
             "image":"https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGhvbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
@@ -271,12 +271,12 @@
             "name":"Cumfrubrum",
             "location":{
                 "address":"Boring Road",
-                "state":"California",
-                "city":"USA"
+                "state":"USA",
+                "city":"California"
             },
             "price":"35000",
             "image":"https://images.unsplash.com/photo-1503594384566-461fe158e797?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGhvbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-            "property-type":"Banglow",
+            "property-type":"Bangalow",
             "move-in-date":{
                 "year":2023,
                 "month":7
@@ -294,11 +294,11 @@
             "location":{
                 "address":"Near Ring road, 1st Street",
                 "state":"Ontario",
-                "city":"Banguluru"
+                "city":"Toronto"
             },
             "price":"30000",
             "image":"https://images.unsplash.com/photo-1532323544230-7191fd51bc1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGhvbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-            "property-type":"Banglow",
+            "property-type":"Bangalow",
             "move-in-date":{
                 "year":2023,
                 "month":8
@@ -342,7 +342,7 @@
              },
              "price":"15000",
              "image":"https://images.unsplash.com/photo-1531420082871-1c5eb4d20871?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGZsYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-             "property-type":"Banglow",
+             "property-type":"Bangalow",
              "move-in-date":{
                 "year":2022,
                 "month":8
