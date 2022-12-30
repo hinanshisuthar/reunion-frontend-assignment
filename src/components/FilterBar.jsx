@@ -1,11 +1,15 @@
 import { BiCalendar } from "react-icons/bi";
+import { Dropdown } from "./Dropdown";
 
 export const FilterBar = ({
   setSelectededCity,
-  setSelectedPriceRange,
+  setSelectedPrice,
   setSelectedPropertyType,
   setMoveInDate,
   filterHandler,
+  locationOptions,
+  priceOptions,
+  propertyTypeOptions,
 }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 p-6 gap-3 bg-white my-5 rounded-lg my-5">
@@ -19,21 +23,7 @@ export const FilterBar = ({
           id="location"
           onChange={(e) => setSelectededCity(e.target.value)}
         >
-          <option className="p-sm" value="none" selected disabled hidden>
-            Select an Option
-          </option>
-          <option className="p-sm" value="Pune">
-            Toronta, Canada
-          </option>
-          <option className="p-sm" value="Patna">
-            California, USA
-          </option>
-          <option className="p-sm" value="Mumbai">
-            Paris, France
-          </option>
-          <option className="p-sm" value="Bangaluru">
-            Santorini, Greece
-          </option>
+          <Dropdown options={locationOptions} title="location" />
         </select>
       </div>
 
@@ -68,23 +58,9 @@ export const FilterBar = ({
           className="w-full outlint-none font-medium"
           name="price"
           id="price"
-          onChange={(e) => setSelectedPriceRange(e.target.value)}
+          onChange={(e) => setSelectedPrice(e.target.value)}
         >
-          <option className="p-sm" value="none" selected disabled hidden>
-            Select Price
-          </option>
-          <option className="p-sm" value="10000-20000">
-            10k-20k
-          </option>
-          <option className="p-sm" value="20000-30000">
-            20k-30k
-          </option>
-          <option className="p-sm" value="30000-40000">
-            30k-40k
-          </option>
-          <option className="p-sm" value="40000-50000">
-            40k-50k
-          </option>
+          <Dropdown options={priceOptions} title="Price" />
         </select>
       </div>
 
@@ -98,18 +74,7 @@ export const FilterBar = ({
           id="propertytype"
           onChange={(e) => setSelectedPropertyType(e.target.value)}
         >
-          <option className="p-sm" value="none" selected disabled>
-            Select Property Type
-          </option>
-          <option className="p-sm" value="Flat">
-            Flat
-          </option>
-          <option className="p-sm" value="Banglow">
-            Bangloww
-          </option>
-          <option className="p-sm" value="Villa">
-            Villa
-          </option>
+          <Dropdown options={propertyTypeOptions} title="Property Type" />
         </select>
       </div>
 
