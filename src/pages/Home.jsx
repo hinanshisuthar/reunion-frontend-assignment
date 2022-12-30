@@ -80,7 +80,7 @@ export const Home = () => {
           />
           <MdKeyboardArrowDown
             size={20}
-            className="text-indigo-600 bg-indigo-100 rounded-full"
+            className="text-violet-600 bg-violet-100 rounded-full"
           />
         </div>
       </div>

@@ -17,18 +17,18 @@ export const Card = ({ house }) => {
           </div>
           <div className="py-2 px-4 z-10">
             <div className="flex justify-between items-center pb-2">
-              <div className="text-xl font-semibold flex items-center text-indigo-600">
+              <div className="text-xl font-semibold flex items-center text-violet-600">
                 $ {house.price}
                 <span className="month text-xs text-gray-400 font-medium p-1">
                   /month
                 </span>
               </div>
               <div className="group">
-                <span className="w-8 h-8 cursor-pointer flex justify-center items-center text-indigo-500 border-2 rounded-full group-hover:hidden">
-                  <AiOutlineHeart className="text-indigo-500" size={20} />
+                <span className="w-8 h-8 cursor-pointer flex justify-center items-center text-violet-500 border-2 rounded-full group-hover:hidden">
+                  <AiOutlineHeart className="text-violet-500" size={20} />
                 </span>
-                <span className="w-8 h-8 cursor-pointer flex justify-center items-center text-indigo-500 bg-indigo-100 border-2 rounded-full hidden group-hover:flex">
-                  <AiFillHeart className="text-indigo-500" size={20} />
+                <span className="w-8 h-8 cursor-pointer flex justify-center items-center text-violet-500 bg-violet-100 border-2 rounded-full hidden group-hover:flex">
+                  <AiFillHeart className="text-violet-500" size={20} />
                 </span>
               </div>
             </div>
@@ -56,9 +56,9 @@ export const Card = ({ house }) => {
         {house.popular ? (
           <>
             <div className="w-5 overflow-x-hidden absolute top-[9rem] -left-[1rem]">
-              <div className="h-10 bg-indigo-500 rotate-45 transform origin-bottom-right "></div>
+              <div className="h-10 bg-violet-500 rotate-45 transform origin-bottom-right "></div>
             </div>
-            <div className="absolute top-36 -left-3 rounded p-1 bg-indigo-500 flex items-center text-gray-100">
+            <div className="absolute top-36 -left-3 rounded p-1 bg-violet-500 flex items-center text-gray-100">
               <HiSparkles size={18} />
               <span className="pl-1 uppercase text-xs">Popular</span>
             </div>

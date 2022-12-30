@@ -75,7 +75,7 @@ export const FilterBar = ({
         </select>
       </div>
       <button
-        className="py-4 bg-indigo-500 text-white rounded-lg w-32 m-auto"
+        className="py-4 bg-violet-500 text-white rounded-lg w-32 m-auto"
         onClick={filterHandler}
       >
         Search
