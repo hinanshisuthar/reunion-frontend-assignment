@@ -55,8 +55,8 @@ export const Card = ({ house }) => {
         </li>
         {house.popular ? (
           <>
-            <div class="w-5 overflow-x-hidden absolute top-[9rem] -left-[1rem]">
-              <div class="h-10 bg-indigo-500 rotate-45 transform origin-bottom-right "></div>
+            <div className="w-5 overflow-x-hidden absolute top-[9rem] -left-[1rem]">
+              <div className="h-10 bg-indigo-500 rotate-45 transform origin-bottom-right "></div>
             </div>
             <div className="absolute top-36 -left-3 rounded p-1 bg-indigo-500 flex items-center text-gray-100">
               <HiSparkles size={18} />
