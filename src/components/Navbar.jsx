@@ -11,7 +11,7 @@ export const Navbar = () => {
   ];
 
   return (
-    <header className="flex items-center border-b-2 border-gray-100 p-3">
+    <header className="flex items-center border-b-2 border-gray-100 py-5 px-3">
       <div className="flex mx-2 items-center">
         <FaEnvelopeOpen size={20} className="text-indigo-500" />
         <span className="font-bold">Estatery</span>
@@ -19,11 +19,11 @@ export const Navbar = () => {
       <ul className="flex items-center gap-[5]">
         {linksArr.map((link, i) => (
           <li
-            key={i}
+            key={link.name + i}
             className={
               i === 0
                 ? "bg-indigo-100 text-indigo-600 font-bold cursor-pointer px-2 py-1 rounded mx-5"
-                : "flex items-center font-medium cursor-pointer px-2 py-1 rounded mx-5"
+                : "hidden items-center font-medium cursor-pointer px-2 py-1 rounded mx-5 hover:bg-indigo-100 hover:text-indigo-600 hover:font-bold md:flex lg:flex xl:flex"
             }
           >
             {link.isDropDown ? (

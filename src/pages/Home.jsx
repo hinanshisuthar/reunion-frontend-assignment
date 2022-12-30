@@ -45,15 +45,17 @@ export const Home = () => {
     setData(filteredResult);
   };
 
+  console.log(moveInDate)
+
   return (
-    <div className="px-28 py-[3.5rem] bg-gray-100">
-      <div className="flex items-center justify-between">
+    <div className="md:px-25 md:py-[3rem] lg:px-28 md:py-[3.5rem] px-16 py-[2rem] bg-gray-100 z-0 flex flex-col gap-4">
+      <div className="flex items-center justify-between flex-wrap">
         <h1 className="text-4xl font-semibold">Search properties to rent</h1>
-        <div className="flex items-center border-2 rounded p-1 bg-white">
+        <div className="flex items-center border-2 rounded-lg py-1 px-3 bg-white">
           <input
             type="text"
             placeholder="Search with SearchBar"
-            className="text-gray-600 p-1 outline-none font-medium"
+            className="text-gray-700 p-1 outline-none font-medium"
             onChange={(e) => setSearch(e.target.value)}
             onKeyDown={filterHandler}
           />
@@ -71,7 +73,7 @@ export const Home = () => {
         filterHandler={filterHandler}
       />
       <section>
-        <ul className="grid grid-cols-3 gap-5">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {data.length < 1 ? (
             <h1 className="text-2xl text-center pt-5 text-red-500">No filteredResults. Try changing filters</h1>
           ) : (
