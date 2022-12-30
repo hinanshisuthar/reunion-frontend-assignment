@@ -26,7 +26,6 @@ export const FilterBar = ({
           <Dropdown options={locationOptions} title="location" />
         </select>
       </div>
-
       <div className="flex flex-col items-start border-r">
         <span className="text-gray-400 font-medium flex flex-col">When</span>
         <div className="flex items-center">
@@ -51,7 +50,6 @@ export const FilterBar = ({
           </span>
         </div>
       </div>
-
       <div className="flex flex-col items-start border-r">
         <span className="text-gray-400 font-medium flex flex-col">Price</span>
         <select
@@ -63,7 +61,6 @@ export const FilterBar = ({
           <Dropdown options={priceOptions} title="Price" />
         </select>
       </div>
-
       <div className="flex flex-col items-start border-r">
         <span className="text-gray-400 font-medium flex flex-col">
           Property Type
@@ -77,7 +74,6 @@ export const FilterBar = ({
           <Dropdown options={propertyTypeOptions} title="Property Type" />
         </select>
       </div>
-
       <button
         className="py-4 bg-indigo-500 text-white rounded-lg w-32 m-auto"
         onClick={filterHandler}
