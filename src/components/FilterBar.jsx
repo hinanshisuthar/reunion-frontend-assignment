@@ -39,7 +39,7 @@ export const FilterBar = ({
 
       <div className="flex flex-col items-start border-r">
         <span className="text-gray-400 font-medium flex flex-col">When</span>
-        <div className="flex items-center p-1">
+        <div className="flex items-center">
           <input
             className="font-medium mr-2 focus:outline-none cursor-pointer w-full placeholder-black"
             type="text"
